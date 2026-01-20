@@ -2,6 +2,9 @@ name: hello-world
 on:
   schedule:
     - cron: "*/5 * * * *"
+  push:
+    branches:
+      - main
 jobs:
   my-job:
     runs-on: ubuntu-latest
